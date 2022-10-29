@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css"> </link>
+    
+    <title>Weather App </title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <form id = "city-input">
+        <div class="form-group">
+          <input type="search" class="form-control"  placeholder="Enter city" id = "search-city"/>
+          <div class = "buttons">
+        <button type="submit" class="btn btn-primary" id = "search-button">Search</button>
+        <button type = "submit" class="btn btn-primary" id="current-button"> Current </button>
+          </div>
+      </div>
+      </form>
+      <h1 id = "main-city"> Kyiv  </h1>
+      <p id = "current-date"> Thursday 10 , 10:18 </p>
+     
+
+  <h2>Sunny <br > <span id = "degree-value"> 18 </span>  <a href = "#" id = Celcius> C°</a>  <a href = "#" id = Fahrenheit> |F°</a> </h2>
+  <p id="#precipitation">Precipitation </p> <p id = "#wind"> Wind</p>
+
+ 
+
+
+  <div class="row"> 
+    <div class=" col-4"> <div class="card">
+  <div class="card-header">
+    Tomorrow
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Special title treatment</h5>
+    <p class="card-text"> 15 C <br/> Cloudy</p>  
+  </div>
+</div>  </div> 
+
+
+
+    <div class=" col-4">Saturday 16C <br/>Sunny </div>
+    <div class=" col-4">Sunday 14 C <br/> Raining</div> 
+    </div>
+  
+
+ <script src= "script.js"> </script>
+  </body>
+</div>
+</html>

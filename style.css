@@ -1,0 +1,39 @@
+body {
+  background: blanchedalmond;
+}
+h1 {
+  text-align: center;
+}
+h2 {
+  position: relative;
+  text-align: center;
+  top: -50px;
+}
+.row {
+  position: relative;
+  top: -60px;
+  text-align: center;
+  margin-top: 60px;
+}
+.container {
+  background: linear-gradient(#aebdca, #9198e5);
+  border: solid white;
+  display: block;
+  margin: 0 auto;
+  border-radius: 25px;
+}
+.col-4 {
+  border: 1px solid rgb(200, 200, 231);
+  border-radius: 35px;
+  background: linear-gradient(white, rgb(160, 214, 199));
+}
+input#search-city.form-control {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 5px;
+  background: linear-gradient(#f3eee3, #f5efe6);
+}
+button#search-button.btn.btn-primary {
+  position: relative;
+  margin-left: 43%;
+}
