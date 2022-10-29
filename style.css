@@ -37,3 +37,7 @@ button#search-button.btn.btn-primary {
   position: relative;
   margin-left: 43%;
 }
+.GitHub-link {
+  display: block;
+  margin: 0 auto;
+}
