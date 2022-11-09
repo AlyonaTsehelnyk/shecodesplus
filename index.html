@@ -20,39 +20,62 @@
       <form id = "city-input">
         <div class="form-group">
           <input type="search" class="form-control"  placeholder="Enter city" id = "search-city"/>
-          <div class = "buttons">
+          <div class="buttons" >
+          <div class = "center" id ="wrapper">
+        
         <button type="submit" class="btn btn-primary" id = "search-button">Search</button>
         <button type = "submit" class="btn btn-primary" id="current-button"> Current </button>
+        </div>
           </div>
       </div>
       </form>
-      <h1 id = "main-city"> Kyiv  </h1>
-      <p id = "current-date"> Thursday 10 , 10:18 </p>
-     
-
-  <h2>Sunny <br > <span id = "degree-value"> 18 </span>  <a href = "#" id = Celcius> C°</a>  <a href = "#" id = Fahrenheit> |F°</a> </h2>
-  <p id="#precipitation">Precipitation </p> <p id = "#wind"> Wind</p>
-
+      
+      <div class="card">
+  <div class="card-body-main">
+    <h1 id = "main-city"> Kyiv  </h1>
+     <div id = "weather-icon"> <img src="" alt="Clear" id="icon"  /></div>
+    
+      <h2> <span id= "weather"> Sunny </span><br > <span id = "degree-value"> 18 </span><a href = "#" class = "active" id = Celcius> C°</a><a href = "#" id = Fahrenheit>| F°</a> </h2>
+    
+      <ul style="list-style: none;"> 
+        <li id = "humidity"> Humidity: <span id = "humidity-value"> 20 </span> %</li>
+        <li id = "wind"> Wind: <span id = "wind-value">20</span> km/h </li>
+        <li id = "current-date"> Thursday 10 , 10:18 </li>
+        </ul>
+  </div>
+</div>
  
-
-
-  <div class="row"> 
-    <div class=" col-4"> <div class="card">
-  <div class="card-header">
-    Tomorrow
-  </div>
-  <div class="card-body">
-    <h5 class="card-title">Special title treatment</h5>
-    <p class="card-text"> 15 C <br/> Cloudy</p>  
-  </div>
-</div>  </div> 
-
-
-
-    <div class=" col-4">Saturday 16C <br/>Sunny </div>
-    <div class=" col-4">Sunday 14 C <br/> Raining</div> 
+  <div class="row">
+  <div class="col-sm-4">
+    <div class="mini-card">
+      <div class="card-body">
+        <h5 class="card-title">Tomorrow</h5>
+        <p class="card-text"> 7C </p>
+        <p class="card-text"> Partly cloudy</p>
+      </div>
     </div>
-  
+  </div>
+  <div class="col-sm-4">
+    <div class="mini-card">
+      <div class="card-body">
+        <h5 class="card-title">Saturday</h5>
+        <p class="card-text">9 C</p>
+        <p class="card-text"> Rain</p>
+     
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="mini-card">
+      <div class="card-body">
+        <h5 class="card-title">Sunday</h5>
+        <p class="card-text"> 5 C</p>
+        <p class="card-text"> Cloudy</p>
+        
+      </div>
+    </div>
+  </div>
+</div>
 
  <script src= "script.js"> </script>
   </body>
