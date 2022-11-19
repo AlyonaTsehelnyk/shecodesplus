@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="style.css"> </link>
     
     <title>Weather App </title>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js" integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   </head>
   <body>
     <div class="container">
@@ -44,39 +44,7 @@
         </ul>
   </div>
 </div>
- 
-  <div class="row">
-  <div class="col-sm-4">
-    <div class="mini-card">
-      <div class="card-body">
-        <h5 class="card-title">Tomorrow</h5>
-        <p class="card-text"> 7C </p>
-        <p class="card-text"> Partly cloudy</p>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-4">
-    <div class="mini-card">
-      <div class="card-body">
-        <h5 class="card-title">Saturday</h5>
-        <p class="card-text">9 C</p>
-        <p class="card-text"> Rain</p>
-     
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-4">
-    <div class="mini-card">
-      <div class="card-body">
-        <h5 class="card-title">Sunday</h5>
-        <p class="card-text"> 5 C</p>
-        <p class="card-text"> Cloudy</p>
-        
-      </div>
-    </div>
-  </div>
-</div>
-
+<div class="weather-forecast" id="forecast"></div>
  <script src= "script.js"> </script>
   </body>
 </div>

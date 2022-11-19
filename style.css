@@ -70,3 +70,9 @@ li {
 .active:hover {
   text-decoration: none;
 }
+.card-text {
+  text-transform: capitalize;
+}
+.weather-forecast-temperature-min {
+  color: #79777d;
+}
