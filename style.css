@@ -31,8 +31,9 @@ input#search-city.form-control {
 }
 
 .GitHub-link {
-  display: block;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 ul {
   text-align: center;
