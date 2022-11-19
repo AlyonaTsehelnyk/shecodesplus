@@ -19,15 +19,7 @@ p.innerHTML = ` ${day} ${date} ${hour} : ${minutes}`;
 function formatDay(timestamp) {
   let date = new Date(timestamp * 1000);
   let day = date.getDay();
-  let days = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-  ];
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   return days[day];
 }
 function displayForecast(response) {
@@ -36,7 +28,7 @@ function displayForecast(response) {
   let forecastHTML = `<div class="row">`;
   let days = ["Thursday", "Friday", "Saturday", "Sunday", "Monday", "Tuesday"];
   forecast.forEach(function (forecastDay, index) {
-    if (index < 6) {
+    if (index > 0 && index < 7) {
       forecastHTML =
         forecastHTML +
         `
@@ -132,27 +124,4 @@ currentLocationButton.addEventListener("click", getCurrentLocation);
 let searchForm = document.querySelector("#city-input");
 searchForm.addEventListener("submit", handleSubmit);
 
-function convertTofahrenheit(event) {
-  event.preventDefault();
-  celciusValue.classList.remove("active");
-  fahrenheitValue.classList.add("active");
-  let fahrenheitDegrees = Math.round((celciusTemperature * 9) / 5 + 32);
-  let degreeElement = document.querySelector("#degree-value");
-  degreeElement.innerHTML = fahrenheitDegrees;
-}
-let fahrenheitValue = document.querySelector("#Fahrenheit");
-fahrenheitValue.addEventListener("click", convertTofahrenheit);
-
-function convertToCelcius(event) {
-  event.preventDefault();
-  celciusValue.classList.add("active");
-  fahrenheitValue.classList.remove("active");
-  let degreeElement = document.querySelector("#degree-value");
-  degreeElement.innerHTML = Math.round(celciusTemperature);
-}
-
-let celciusValue = document.querySelector("#Celcius");
-celciusValue.addEventListener("click", convertToCelcius);
-
-let celciusTemperature = null;
 searchCity("New York");

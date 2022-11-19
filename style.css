@@ -16,7 +16,7 @@ h2 {
   margin-top: 60px;
 }
 .container {
-  background: linear-gradient(#aebdca, #9198e5);
+  background: linear-gradient(#cbdbea, #838be2);
   border: solid white;
   display: block;
   margin: 0 auto;
@@ -27,7 +27,7 @@ input#search-city.form-control {
   width: 50%;
   margin: 0 auto;
   margin-top: 5px;
-  background: linear-gradient(#f3eee3, #f5efe6);
+  background: linear-gradient(#eff7f9, #f3fdff);
 }
 
 .GitHub-link {
@@ -44,7 +44,7 @@ ul {
   margin: 0 auto;
 }
 .mini-card {
-  background-color: beige;
+  background-color: rgb(255, 255, 255);
   border-radius: 35px;
   margin-top: 40px;
 }
